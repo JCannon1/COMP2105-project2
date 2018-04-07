@@ -1,0 +1,163 @@
+body { 
+	margin: 0; 
+	padding: 0; 
+	font: 1em "Trebuchet MS", verdana, arial, sans-serif; font-size: 100%;
+	/* Changed the background colour to lightblue */
+	background: lightblue;
+}
+
+div.container { 
+	margin: auto; 
+	width: 80%; 
+}
+
+h1 {
+	text-shadow: 0 1px 0 #eee;
+	
+}
+ul.tabNavigation {
+    list-style: none;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+ul.tabNavigation li {
+    display: inline;
+	margin: 0;
+}
+
+ul.tabNavigation li a {
+    padding: 10px 10px 0 10px;
+    background-color: #ddd;
+    color: #000;
+    text-decoration: none;
+	border: 1px solid #888;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+ul.tabNavigation li a:hover {
+	background-color: #eee;
+}	
+
+ul.tabNavigation li a.selected {
+    background-color: #FFF;
+    color: #333;
+	border-bottom: 1px solid #FFF;
+}
+	
+ul.tabNavigation li a:focus {
+	outline: 0;
+}
+
+div.tabs > div {
+	padding: 25px;
+	border: 1px solid #888;
+    background-color: #FFF;
+	border-radius: 5px;
+}
+
+div.tabs > div h2 {
+	margin-top: 0;
+}
+		
+.waste {
+	min-height: 1000px;
+}
+
+
+/* My Custom CSS */
+/* Made the h1 red on hover */
+h1:hover {
+	transform: scale(1, 2);
+    color: red;
+    transition: width 2s, height 2s, transform 2s;
+}
+/* Made the animate button larger on hover */
+button:hover {
+	transform: scale(1, 2);
+	transition: width 4s, height 2s, transform 2s;
+}
+/* Made all h2 green on hover */
+h2:hover {
+	transform: skewX(40deg);
+    color: green;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+
+
+/* CSS from https://greensock.com/timelinelite */
+h1 {
+	position: relative;
+	margin-top: 10px;
+	font-size: 36px;
+	font-weight: normal;
+  }
+  
+  h2 {
+	position: relative;
+	font-size: 22px;
+	font-weight: normal;
+	color: black;
+  }
+  
+  #demoWrapper {
+	width: 600px;
+	height: 350px;
+	-webkit-font-smoothing: antialiased;
+	color: black;
+	margin:auto;
+  }
+  #bg {
+	position: absolute;
+	width: 800px;
+	height: 350px;
+  }
+  #content {
+	padding-left: 15px;
+	visibility: hidden;
+  }
+  #info {
+	margin-top: 20px;
+  }
+  #feature {
+	position: relative;
+	float: left;
+  }
+  #description {
+	position: relative;
+	float: left;
+	margin-left: 20px;
+	width: 290px;
+	font-size: 16px;
+	line-height: 24px;
+  }
+  #nav {
+  text-align:right;
+	margin:20px 10px;
+  }
+  #nav img {
+	text-align:center;
+	position: relative;
+	margin-right: 20px;
+   
+  }
+  button {
+	padding: 10px;
+	margin-top: 10px;
+  }
+  
+  button:nth-child(1){
+	margin-left:10px;
+  }
+  
+  #slider{
+	width: 580px;
+	margin:10px auto;
+	
+  }
+  
+  .ui-widget-content {
+	background-color:rgba(255, 255, 255, 0.2);
+  }

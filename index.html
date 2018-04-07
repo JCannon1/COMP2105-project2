@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Tabs</title>
+	<link rel="stylesheet" href="css/tabs.css" media="screen" />
+</head>
+<body id="page">
+
+	<!-- Make the background colour change to white when the button is clicked -->
+	<button type="button" onclick="backgroundColor('white');">Click to Animate</button>
+	
+	<div class="container">
+		<h1>Tabs</h1>
+	    <div class="tabs">
+	        <ul class="tabNavigation">
+	            <li><a href="#first">Details</a></li>
+	            <li><a href="#second">Specifications</a></li>
+	            <li><a href="#third">Accessories</a></li>
+	            <li><a href="#fourth">Reviews</a></li>
+	        </ul>
+	        <div id="first">
+	            <h2>Details</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu diam ac nulla malesuada cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu eros a orci convallis consequat et eget nibh. Fusce a mi in tortor vulputate euismod vitae non dolor. Integer blandit adipiscing felis a sagittis. Fusce a vestibulum magna. Sed tellus diam, mattis quis tempor in, eleifend ac nisi. Nam odio ipsum, tempus quis semper laoreet, sagittis sed dolor. Quisque laoreet tincidunt tincidunt. Suspendisse pharetra cursus vestibulum. Proin viverra urna nec lorem tempus non scelerisque augue ultricies. Nam a pharetra eros. Duis leo augue, elementum et lobortis id, euismod tincidunt sem.</p>
+	        </div>
+	        <div id="second">
+	            <h2>Specifications</h2>
+	            <p>Phasellus eleifend, eros non blandit rutrum, massa orci elementum diam, sit amet cursus nisl tortor ac nunc. Suspendisse et enim eget enim luctus fermentum. Sed aliquam lacus luctus ligula suscipit placerat. Cras rutrum pellentesque ullamcorper. Nunc rhoncus euismod est, non accumsan nisl convallis in. Suspendisse ac enim non nisl tempus faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam odio augue, blandit et volutpat id, varius eget orci. Morbi quis elit enim, at varius velit. Vestibulum fringilla ante vel odio suscipit eu facilisis massa porta. Maecenas accumsan libero vestibulum massa vehicula euismod. Maecenas lacinia sem at est pulvinar congue. Donec in est a elit vestibulum euismod. Donec in nisl nisl.</p>
+	        </div>
+	        <div id="third">
+	            <h2>Accessories</h2>
+	            <p>Fusce mattis semper neque, eget iaculis mi pellentesque nec. Donec ultrices ullamcorper lacus vel dignissim. Mauris mollis, tortor a tincidunt adipiscing, augue lorem rhoncus mi, vitae facilisis ligula mauris ac lacus. Praesent dignissim, est quis tincidunt elementum, mi arcu dapibus ligula, vitae feugiat felis sapien ac nisi. Aenean dignissim bibendum dolor in facilisis. Duis aliquet, dui ac tincidunt sodales, erat massa elementum velit, vel condimentum elit sapien sit amet enim. Suspendisse sed odio semper lorem eleifend mollis. Aenean laoreet ante nec mi porta in sodales est luctus. Pellentesque sed lacus vitae nisl blandit euismod. Proin rutrum tellus nec quam sodales et adipiscing tortor adipiscing. Phasellus lacus erat, tempor eu iaculis eget, faucibus vitae dolor. Aliquam fringilla imperdiet nisi, et tempor dolor tincidunt sit amet. Donec vitae neque id libero tincidunt rhoncus. Suspendisse at massa eget dui mollis vehicula.</p>
+	        </div>
+	        <div id="fourth">
+	            <h2>Reviews</h2>
+	            <p>Suspendisse luctus mollis aliquam. Suspendisse potenti. Quisque a urna nisi. Praesent nisl turpis, aliquet vitae consequat eget, vestibulum nec nisl. Morbi tristique convallis lorem, ut tincidunt lacus mattis nec. In erat erat, tempus sed lacinia ac, fermentum sollicitudin sapien. Nulla facilisi. Vestibulum nec risus tortor, at venenatis lorem. Suspendisse potenti. Morbi accumsan tellus ut nulla elementum rhoncus. Ut tempor adipiscing dapibus.</p>
+	        </div>
+		</div><!-- end .tabs -->
+	</div><!-- end #container -->
+
+	<!-- HTML from https://greensock.com/timelinelite -->
+<div id="demoWrapper">
+	<div id="bg"></div>
+	  <div id="content">
+		<h1>Basketballs</h1>
+		<h2>Below are a selection of basketballs</h2>
+		<div id="info"><img src="images/170px-Basketball.png" width="240" height="151" id="feature">
+		  <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu diam ac nulla malesuada cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu eros a orci convallis consequat et eget nibh. Fusce a mi in tortor vulputate euismod vitae non dolor. Integer blandit adipiscing felis a sagittis.</p>
+		</div>
+		
+	</div>
+	<div style="clear:both"></div>
+	<div id="nav"> <img src="images/170px-Basketball.png" width="83" height="75"><img src="images/170px-Basketball.png" width="73" height="59"><img src="images/170px-Basketball.png" width="73" height="59"><img src="images/170px-Basketball.png" width="83" height="59"><img src="images/170px-Basketball.png" width="76" height="59">
+		</div>
+	<div>
+	<button id="play">play()</button>
+	<button id="pause">pause()</button>
+	<button id="reverse">reverse()</button>
+	<button id="resume">resume()</button>
+	<button id="stagger">play("stagger")</button>
+	<button id="restart">restart</button>
+  </div>
+  <div id="sliderWrapper">
+  <div id="slider"></div>
+  </div>
+  </div>
+  
+	<div class="waste"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<!-- Added in TweenMax.min.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script src="js/tabs.js" type="text/javascript"></script>
+  </body>
+</html>
+
+
+
